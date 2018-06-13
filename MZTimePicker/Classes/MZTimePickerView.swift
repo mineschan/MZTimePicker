@@ -84,6 +84,9 @@ public class MZTimePickerView: UIView {
             rangeToLabel?.textColor = rangeToTextColor
         }
     }
+    
+    public var pickerRowFont = UIFont.systemFont(ofSize: 14, weight: .regular)
+    
     public var rangeToFont = UIFont.systemFont(ofSize: 14, weight: .regular) {
         didSet {
             rangeToLabel?.font = rangeToFont

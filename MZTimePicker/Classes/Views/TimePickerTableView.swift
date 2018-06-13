@@ -47,6 +47,7 @@ extension TimePickerTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: pickerCellId)!
         cell.textLabel?.textAlignment = .center
+        cell.textLabel?.font = pickerView.pickerRowFont
         
         if position == .lower {
             cell.textLabel?.text = pickerView.times[indexPath.row + 1].format(pickerView.timeFormat)
