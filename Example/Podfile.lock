@@ -1,0 +1,16 @@
+PODS:
+  - MZTimePicker (0.1.0)
+
+DEPENDENCIES:
+  - MZTimePicker (from `../`)
+
+EXTERNAL SOURCES:
+  MZTimePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MZTimePicker: 4f740bcfa906698c7d751036ee9275b8872e54a4
+
+PODFILE CHECKSUM: 3ef4d4eb23569e643f755411c4530679a51ccc72
+
+COCOAPODS: 1.5.3

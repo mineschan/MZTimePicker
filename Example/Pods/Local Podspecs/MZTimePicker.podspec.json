@@ -1,0 +1,22 @@
+{
+  "name": "MZTimePicker",
+  "version": "0.1.0",
+  "summary": "A short description of MZTimePicker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mineschan/MZTimePicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mineschan": "mineschan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mineschan/MZTimePicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MZTimePicker/Classes/**/*"
+}

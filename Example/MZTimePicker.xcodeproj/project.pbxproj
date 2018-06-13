@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		14CCFF47A75FFBEEAAC7F408 /* Pods-MZTimePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZTimePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZTimePicker_Example/Pods-MZTimePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4C4AB3BCEABA0045FCEF11E1 /* MZTimePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MZTimePicker.podspec; path = ../MZTimePicker.podspec; sourceTree = "<group>"; };
+		4C4AB3BCEABA0045FCEF11E1 /* MZTimePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MZTimePicker.podspec; path = ../MZTimePicker.podspec; sourceTree = "<group>"; };
 		535664728CBE117D1E384298 /* Pods_MZTimePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZTimePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B0D1290EE4BEBB20B9A3A3 /* Pods-MZTimePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZTimePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZTimePicker_Tests/Pods-MZTimePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MZTimePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZTimePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +44,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		90CA49E0BF7688F9AFDD4B58 /* Pods_MZTimePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZTimePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73C0616E4D22BDEA59FAF24 /* Pods-MZTimePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZTimePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZTimePicker_Example/Pods-MZTimePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C9D3E5F951C1FC715CDA135C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E5AC81057F4A19C49CC37DAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C9D3E5F951C1FC715CDA135C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E5AC81057F4A19C49CC37DAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FF3537748AB89C6D15232E6A /* Pods-MZTimePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZTimePicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZTimePicker_Tests/Pods-MZTimePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,15 +207,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S3PLWB67FE;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S3PLWB67FE;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -377,12 +379,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,12 +434,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -469,6 +475,7 @@
 			baseConfigurationReference = 14CCFF47A75FFBEEAAC7F408 /* Pods-MZTimePicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3PLWB67FE;
 				INFOPLIST_FILE = MZTimePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +491,7 @@
 			baseConfigurationReference = B73C0616E4D22BDEA59FAF24 /* Pods-MZTimePicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3PLWB67FE;
 				INFOPLIST_FILE = MZTimePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF3537748AB89C6D15232E6A /* Pods-MZTimePicker_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S3PLWB67FE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -519,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57B0D1290EE4BEBB20B9A3A3 /* Pods-MZTimePicker_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S3PLWB67FE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
