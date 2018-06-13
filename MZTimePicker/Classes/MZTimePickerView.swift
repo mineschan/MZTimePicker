@@ -65,7 +65,12 @@ public class MZTimePickerView: UIView {
     }
     
     //styles
-    public var selectedTimeViewBgColor = UIColor.darkGray
+    public var selectedTimeViewBgColor = UIColor.darkGray {
+        didSet {
+            selectedTimeView.backgroundColor = selectedTimeViewBgColor
+        }
+    }
+    
     public var timeValueTextColor = UIColor.white {
         didSet {
             valueLabel1?.textColor = timeValueTextColor
@@ -86,7 +91,8 @@ public class MZTimePickerView: UIView {
     }
     
     public var pickerRowFont = UIFont.systemFont(ofSize: 14, weight: .regular)
-    
+    public var pickerRowTextColor = UIColor.black
+
     public var rangeToFont = UIFont.systemFont(ofSize: 14, weight: .regular) {
         didSet {
             rangeToLabel?.font = rangeToFont
