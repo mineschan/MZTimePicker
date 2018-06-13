@@ -121,12 +121,17 @@ extension TimePickerColumn {
             return
         }
         let time = pickerView.times[lowerTableView.currentRow()]
+        
+        //check if changed
+        guard currentTime?.seconds != time.seconds else { return }
+        
         if columnIndex == 0 {
             pickerView.valueLabel1?.text = time.format(pickerView.timeFormat)
         }else if columnIndex == 1 {
             pickerView.valueLabel2?.text = time.format(pickerView.timeFormat)
         }
         currentTime = time
+        pickerView.tapticFeedback()
     }
     
     private func correctTimeSlotRange() {

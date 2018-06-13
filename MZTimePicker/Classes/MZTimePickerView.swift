@@ -310,4 +310,12 @@ extension MZTimePickerView {
             }
         }
     }
+    
+    func tapticFeedback() {
+        if #available(iOS 10, *) {
+            let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+            selectionFeedbackGenerator.prepare()
+            selectionFeedbackGenerator.selectionChanged()
+        }
+    }
 }
