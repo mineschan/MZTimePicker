@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MZTimePicker_Example' do
+  pod 'MZTimePicker', :path => '../'
+
+  target 'MZTimePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
