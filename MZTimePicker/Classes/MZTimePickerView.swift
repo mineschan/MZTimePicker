@@ -9,9 +9,9 @@
 import UIKit
 
 public struct Time {
-    var seconds: TimeInterval
+    public var seconds: TimeInterval
     
-    init(seconds: TimeInterval) {
+    public init(seconds: TimeInterval) {
         self.seconds = seconds
     }
     
