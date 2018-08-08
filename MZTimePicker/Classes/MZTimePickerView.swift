@@ -63,6 +63,12 @@ public class MZTimePickerView: UIView {
             column2?.isUserInteractionEnabled = !disableEndTimeSelection
         }
     }
+  
+  public var isUpperPickerHidden = false {
+    didSet {
+      setupPickers()
+    }
+  }
     
     //styles
     public var selectedTimeViewBgColor = UIColor.darkGray {
@@ -218,7 +224,9 @@ public class MZTimePickerView: UIView {
     
     public override func layoutSubviews() {
         
-        selectedTimeView.frame = CGRect(x: 0, y: self.frame.size.height / 2 - selectedTimeViewHeight / 2 - (selectedTimeViewOffsetY * -1), width: self.frame.size.width, height: selectedTimeViewHeight)
+        let selectedTimeViewStartY = isUpperPickerHidden ? 0 : self.frame.size.height / 2 - selectedTimeViewHeight / 2 - (selectedTimeViewOffsetY * -1)
+        
+        selectedTimeView.frame = CGRect(x: 0, y: selectedTimeViewStartY, width: self.frame.size.width, height: selectedTimeViewHeight)
         
         if self.pickerType == .single {
             column1?.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)

@@ -19,11 +19,14 @@ class TimePickerColumn: UIView {
     
     private var isSyncingPicker = false
     var currentTime: Time?
-    
-    convenience init(pickerView: MZTimePickerView, column: Int) {
+  
+    public var isUpperPickerHidden = false
+
+  convenience init(pickerView: MZTimePickerView, column: Int, isUpperPickerHidden: Bool = false) {
         self.init(frame: CGRect.zero)
         self.pickerView = pickerView
         self.columnIndex = column
+        self.isUpperPickerHidden = isUpperPickerHidden
         
         upperTableView = TimePickerTableView(pickerView: pickerView, position: .upper)
         upperTableView.delegate = self
@@ -44,8 +47,12 @@ class TimePickerColumn: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        upperTableView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: pickerView.selectedTimeView.frame.minY)
-        upperTableView.contentInset = UIEdgeInsetsMake(pickerView.selectedTimeView.frame.minY, 0, 0, 0)
+        
+        if !isUpperPickerHidden {
+            upperTableView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: pickerView.selectedTimeView.frame.minY)
+            upperTableView.contentInset = UIEdgeInsetsMake(pickerView.selectedTimeView.frame.minY, 0, 0, 0)
+        }
+
         lowerTableView.frame = CGRect(x: 0, y: pickerView.selectedTimeView.frame.minY, width: self.frame.width, height: pickerView.frame.height - pickerView.selectedTimeView.frame.maxY + pickerView.selectedTimeView.frame.height)
         lowerTableView.contentInset = UIEdgeInsetsMake(pickerView.selectedTimeView.frame.height, 0, self.frame.height - pickerView.selectedTimeView.frame.maxY, 0)
         lowerTableView.contentOffset = CGPoint(x: 0, y: -pickerView.selectedTimeView.frame.height)
