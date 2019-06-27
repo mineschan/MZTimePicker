@@ -217,7 +217,7 @@ public class MZTimePickerView: UIView {
             column2?.changeToSlot(row: minimumRangeStep, animated: false)
         }
         
-        self.bringSubview(toFront: selectedTimeView)
+        self.bringSubviewToFront(selectedTimeView)
         self.setNeedsLayout()
         self.layoutIfNeeded()
     }
@@ -246,14 +246,14 @@ public class MZTimePickerView: UIView {
 }
 
 public extension MZTimePickerView {
-    public func setRangeText(_ text: String) {
+    func setRangeText(_ text: String) {
         rangeToLabel?.text = text
         rangeToLabel?.sizeToFit()
         self.setNeedsLayout()
         self.layoutIfNeeded()
     }
     
-    public func getTime(column: Int) -> Time? {
+    func getTime(column: Int) -> Time? {
         switch column {
         case 0:
             if let selected = column1?.selectedTimeSlot {
@@ -270,7 +270,7 @@ public extension MZTimePickerView {
 
     }
     
-    public func setTime(column: Int, time: TimeInterval, animated: Bool) {
+    func setTime(column: Int, time: TimeInterval, animated: Bool) {
         let matchedTime = times.enumerated().filter {
             $0.element.seconds == time
         }.first
@@ -278,7 +278,7 @@ public extension MZTimePickerView {
         setTime(column: column, slot: timeIndex, animated: animated)
     }
     
-    public func setTime(column: Int, slot: Int, animated: Bool) {
+    func setTime(column: Int, slot: Int, animated: Bool) {
         switch (column) {
         case 0:
             guard slot < (times.count - 1) else {

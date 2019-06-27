@@ -1,6 +1,0 @@
-framework module MZTimePicker {
-  umbrella header "MZTimePicker-umbrella.h"
-
-  export *
-  module * { export * }
-}

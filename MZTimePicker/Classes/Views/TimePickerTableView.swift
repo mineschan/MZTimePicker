@@ -24,7 +24,7 @@ class TimePickerTableView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.register(UITableViewCell.self, forCellReuseIdentifier: pickerCellId)
         self.showsVerticalScrollIndicator = false

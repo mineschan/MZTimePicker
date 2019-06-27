@@ -50,11 +50,11 @@ class TimePickerColumn: UIView {
         
         if !isUpperPickerHidden {
             upperTableView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: pickerView.selectedTimeView.frame.minY)
-            upperTableView.contentInset = UIEdgeInsetsMake(pickerView.selectedTimeView.frame.minY, 0, 0, 0)
+            upperTableView.contentInset = UIEdgeInsets.init(top: pickerView.selectedTimeView.frame.minY, left: 0, bottom: 0, right: 0)
         }
 
         lowerTableView.frame = CGRect(x: 0, y: pickerView.selectedTimeView.frame.minY, width: self.frame.width, height: pickerView.frame.height - pickerView.selectedTimeView.frame.maxY + pickerView.selectedTimeView.frame.height)
-        lowerTableView.contentInset = UIEdgeInsetsMake(pickerView.selectedTimeView.frame.height, 0, self.frame.height - pickerView.selectedTimeView.frame.maxY, 0)
+        lowerTableView.contentInset = UIEdgeInsets.init(top: pickerView.selectedTimeView.frame.height, left: 0, bottom: self.frame.height - pickerView.selectedTimeView.frame.maxY, right: 0)
         lowerTableView.contentOffset = CGPoint(x: 0, y: -pickerView.selectedTimeView.frame.height)
         syncPickerUsing(position: .lower)
     }
